@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="../AzureTimeTriggerFunction/AzureTimeTriggerFunction.csproj" />
+  <Project Path="StudentRepo.TestProject/StudentRepo.TestProject.csproj" Id="007eae54-c2a5-4cba-9ef3-9c070ef2261c" />
+  <Project Path="StudentRepo/StudentRepo.csproj" />
+</Solution>

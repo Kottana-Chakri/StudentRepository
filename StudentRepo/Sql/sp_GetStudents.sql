@@ -1,0 +1,5 @@
+CREATE OR ALTER PROCEDURE sp_GetStudents
+AS
+BEGIN
+    SELECT * FROM Students
+END

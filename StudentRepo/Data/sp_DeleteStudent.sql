@@ -1,0 +1,6 @@
+CREATE OR ALTER PROCEDURE sp_DeleteStudent
+    @Id INT
+AS
+BEGIN
+    DELETE FROM Students WHERE Id = @Id
+END
