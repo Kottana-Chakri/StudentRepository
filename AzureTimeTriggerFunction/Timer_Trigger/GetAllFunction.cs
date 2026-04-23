@@ -5,14 +5,14 @@ using Microsoft.Extensions.Logging;
 
 namespace AzureTimeTriggerFunction;
 
-public class Function1
+public class GetAllFunction
 {
-    private readonly ILogger<Function1> _logger;
+    private readonly ILogger<GetAllFunction> _logger;
     private readonly IHttpClientFactory _httpClientFactory;
     private readonly IConfiguration _configuration;
 
-    public Function1(
-        ILogger<Function1> logger,
+    public GetAllFunction(
+        ILogger<GetAllFunction> logger,
         IHttpClientFactory httpClientFactory,
         IConfiguration configuration)
     {
@@ -26,7 +26,7 @@ public class Function1
     {
         _logger.LogInformation("Timer executed at: {time}", DateTime.UtcNow);
 
-        var url = _configuration["StudentApi:GetAllUrl"]; 
+        var url = _configuration["StudentApi:GetAllUrl"];
         if (string.IsNullOrWhiteSpace(url))
         {
             _logger.LogError("StudentApi:GetAllUrl is missing.");
